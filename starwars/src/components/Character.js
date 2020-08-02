@@ -1,11 +1,11 @@
 // Write your Character component here
 import React, { useEffect, useState } from 'react'
-import CharacterCard from './starwars/src/components/Character.js'
+import CharacterCard from './CharacterCard'
 import axios from 'axios'
 
 export default function Character() {
 
-    const [ data, setData ] = useState({})
+    const [ data, setData ] = useState([])
   
     useEffect(() => {
        axios.get('https://rickandmortyapi.com/api/character/[1,2,3,4,5,6]')
@@ -18,8 +18,10 @@ export default function Character() {
 
 
     return (
-        <div className='RickMorty' >
-             <CharacterCard key={Object.data.id} data={Object.data}/>  
+        <div className='RickMorty' >        
+      {data.map(data => {
+          return <CharacterCard key = {data.id} data={data} />
+      })}
         </div>
     )
 }

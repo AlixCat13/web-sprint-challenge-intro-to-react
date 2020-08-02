@@ -12,8 +12,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Rick and Morty Characters</h1>
-      <Character />
+      <div className='Header'>
+      <h1>Rick and Morty Characters</h1>
+      <h2>Wanted by the Citadel of Ricks</h2>
+      </div> 
+      <Character />          
     </div>
   );
 }
