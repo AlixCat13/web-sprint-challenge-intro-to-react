@@ -3,7 +3,8 @@
 
   const CharacText = styled.p `
    color: black; 
-   font-weight: bold;  
+   font-weight: bold;
+   font-size: 18px;  
    `;
 
    const Photo = styled.img `
