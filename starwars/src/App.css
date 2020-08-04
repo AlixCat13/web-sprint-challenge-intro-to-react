@@ -8,11 +8,12 @@
   border: solid white;
 }
 /* write your parent styles in here for your App.js */
-p {
-  color: black;
-  font-weight: bold;
-}
 
-.photo {
-  margin-top: 2%;
-}
+
+/* .photo {
+  
+} */
+
+/* p {
+  font-weight: bold;
+} */
