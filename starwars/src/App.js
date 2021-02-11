@@ -1,4 +1,5 @@
 import React from 'react';
+import Character from './components/Character'
 import './App.css';
 
 const App = () => {
@@ -11,7 +12,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <div className='Header'>
+      <h1>Rick and Morty Characters</h1>
+      <h2>Wanted by the Citadel of Ricks</h2>
+      </div> 
+      <Character />          
     </div>
   );
 }
